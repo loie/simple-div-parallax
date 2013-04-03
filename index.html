@@ -1,0 +1,127 @@
+﻿<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dark Friendly Forest</title>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Tangerine:regular,bold&subset=latin' rel='stylesheet' type='text/css' />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+	<h1>Dark Friendly Forest</h1>
+    <nav>
+        <a href="#" id="eins">First</a>
+        <a href="#" id="zwei">Second</a>
+        <a href="#" id="drei">Third</a>
+        <a href="#" id="vier">Fourth</a>
+    </nav>
+    <div id="scene">
+        <div id="sky"></div>
+        <div id="forest"></div>
+    </div>
+    <div>
+        <h2>How it works</h2>
+		<p>This beautiful animation is made possible by some HTML, CSS, nice graphics and a very simple jQuery script. Just read on to know how.</p>
+		<p>This demo works in current releases of Chrome, Firefox, Opera and Safari.</p>
+		
+		<h3>The Html</h3>
+		<p>The HTML part is simple and pretty straightforward: The first part are the links. Just assign a unique id to each link. It is not necessary to put them into a single <span style="font-family: monospace">div</span>.</p>
+		<p>
+			<pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span>
+  <span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#474796; '> </span><span style='color:#074726; '>href</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"#"</span><span style='color:#474796; '> </span><span style='color:#074726; '>id</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"eins"</span><span style='color:#0057a6; '>></span>First<span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#0057a6; '>></span>
+  <span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#474796; '> </span><span style='color:#074726; '>href</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"#"</span><span style='color:#474796; '> </span><span style='color:#074726; '>id</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"zwei"</span><span style='color:#0057a6; '>></span>Second<span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#0057a6; '>></span>
+  <span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#474796; '> </span><span style='color:#074726; '>href</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"#"</span><span style='color:#474796; '> </span><span style='color:#074726; '>id</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"drei"</span><span style='color:#0057a6; '>></span>Third<span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#0057a6; '>></span>
+  <span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#474796; '> </span><span style='color:#074726; '>href</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"#"</span><span style='color:#474796; '> </span><span style='color:#074726; '>id</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"vier"</span><span style='color:#0057a6; '>></span>Fourth<span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>a</span><span style='color:#0057a6; '>></span>
+<span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span>
+<span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>id</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"scene"</span><span style='color:#0057a6; '>></span>
+    <span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>id</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"sky"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span>
+    <span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>id</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"forest"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span>
+<span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span>
+</pre>
+		</p>
+		
+		<h3>Graphics</h3>
+		<p>First of all, you need three graphics. The one for the non-moving background (i.e. the moon) you need an image as big as the <span style="font-family: monospace">div</span> (i.e. 1000x500 pixels).
+		The second image must be a little broader than the <span style="font-family: monospace">div</span>. This example uses a dimension of 1200x500 pixels. For transparency effects it's recommended to use PNG graphics with non-opaque colors.
+		The third image will be placed frontmost and has to be very broad. This example	uses an image with 3000x500 pixels.
+		
+		<h3>The Css</h3>	
+		<p>Set up the scene with the surrounding <span style="font-family: monospace">div</span> width 1000x500 pixels. The <span style="font-family: monospace">scene</span> has a background image which has the same dimensions as the <span style="font-family: monospace">scene</span> itself. 
+		The other <span style="font-family: monospace">div</span>s have an individual background image each.
+		The <span style="font-family: monospace">z-index</span> is used to order the layers in the correct manner.
+		</p>
+		<p>
+<pre style='color:#000020;background:#f6f8ff;'><span style='color:#308080; '>#</span>scene <span style='color:#406080; '>{</span>
+    <span style='color:#7779bb; font-weight:bold; '>height</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>500</span><span style='color:#006600; '>px</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>width</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>1000</span><span style='color:#006600; '>px</span><span style='color:#406080; '>;</span>
+    
+    <span style='color:#7779bb; font-weight:bold; '>background-image</span><span style='color:#308080; '>:</span> <span style='color:#400000; '>url</span><span style='color:#308080; '>(</span><span style='color:#40015a; '>../img/moon.jpg</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>background-position</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>0</span> <span style='color:#008c00; '>0</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>background-repeat</span><span style='color:#308080; '>:</span> <span style='color:#074726; '>no-repeat</span><span style='color:#406080; '>;</span>
+<span style='color:#406080; '>}</span>
+
+<span style='color:#308080; '>#</span>scene <span style='color:#308080; '>></span> <span style='color:#200080; font-weight:bold; '>div</span> <span style='color:#406080; '>{</span>
+    <span style='color:#7779bb; font-weight:bold; '>height</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>500</span><span style='color:#006600; '>px</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>width</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>1000</span><span style='color:#006600; '>px</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>background-position</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>0</span> <span style='color:#008c00; '>0</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>background-repeat</span><span style='color:#308080; '>:</span> <span style='color:#074726; '>no-repeat</span><span style='color:#406080; '>;</span>
+<span style='color:#406080; '>}</span>
+
+<span style='color:#308080; '>#</span>sky <span style='color:#406080; '>{</span>
+    <span style='color:#7779bb; font-weight:bold; '>background-image</span><span style='color:#308080; '>:</span> <span style='color:#400000; '>url</span><span style='color:#308080; '>(</span><span style='color:#40015a; '>../img/sky.png</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>z-index</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>1</span><span style='color:#406080; '>;</span>
+<span style='color:#406080; '>}</span>
+
+<span style='color:#308080; '>#</span>forest <span style='color:#406080; '>{</span>
+    <span style='color:#7779bb; font-weight:bold; '>margin-top</span><span style='color:#308080; '>:</span> <span style='color:#308080; '>-</span><span style='color:#008c00; '>500</span><span style='color:#006600; '>px</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>background-image</span><span style='color:#308080; '>:</span> <span style='color:#400000; '>url</span><span style='color:#308080; '>(</span><span style='color:#40015a; '>../img/forest.png</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#7779bb; font-weight:bold; '>z-index</span><span style='color:#308080; '>:</span> <span style='color:#008c00; '>2</span><span style='color:#406080; '>;</span>
+<span style='color:#406080; '>}</span>
+</pre>
+		</p>
+		
+		<h3>The jQuery Part</h3>
+		<p>This is where the action happens. The basic idea is to move the background of the individual <span style="font-family: monospace">div</span>s after clicking on a navigation link. The position one represents the background position <span style="font-family: monospace">0px 0px</span>.
+			<span style="font-family: monospace">animate</span> provides a smooth transitions from one numeric value to another.
+			<span style="font-family: monospace">$(selector)</span> selects the element on which the animation will be applied.
+			<span style="font-family: monospace">{backgroundPosition: '-667px 0px'}</span> animates the CSS Property "background-position" to <span style="font-family: monospace">-667px 0px</span>.
+			<span style="font-family: monospace">600</span> means the animation will take 600ms. <span style="font-family: monospace">swing</span> sets a nice easing to the animation. Linear transitions are just too boring! ;-)
+		</p>
+		<p>
+<pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span>document<span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>ready<span style='color:#308080; '>(</span><span style='color:#200080; font-weight:bold; '>function</span><span style='color:#308080; '>(</span><span style='color:#308080; '>)</span><span style='color:#406080; '>{</span>
+    $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#one'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>click<span style='color:#308080; '>(</span><span style='color:#200080; font-weight:bold; '>function</span><span style='color:#308080; '>(</span>event<span style='color:#308080; '>)</span> <span style='color:#406080; '>{</span>
+        event<span style='color:#308080; '>.</span>preventDefault<span style='color:#308080; '>(</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#sky'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'0px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#forest'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'0px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+
+    $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#two'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>click<span style='color:#308080; '>(</span><span style='color:#200080; font-weight:bold; '>function</span><span style='color:#308080; '>(</span>event<span style='color:#308080; '>)</span> <span style='color:#406080; '>{</span>
+        event<span style='color:#308080; '>.</span>preventDefault<span style='color:#308080; '>(</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#sky'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'-66px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#forest'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'-667px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+
+    $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#three'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>click<span style='color:#308080; '>(</span><span style='color:#200080; font-weight:bold; '>function</span><span style='color:#308080; '>(</span>event<span style='color:#308080; '>)</span> <span style='color:#406080; '>{</span>
+        event<span style='color:#308080; '>.</span>preventDefault<span style='color:#308080; '>(</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#sky'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'-133px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#forest'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'-1333px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+
+    $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#four'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>click<span style='color:#308080; '>(</span><span style='color:#200080; font-weight:bold; '>function</span><span style='color:#308080; '>(</span>event<span style='color:#308080; '>)</span> <span style='color:#406080; '>{</span>
+        event<span style='color:#308080; '>.</span>preventDefault<span style='color:#308080; '>(</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#sky'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'-200px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        $<span style='color:#308080; '>(</span><span style='color:#1060b6; '>'#forest'</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>animate<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>backgroundPosition<span style='color:#406080; '>:</span> <span style='color:#1060b6; '>'-2000px 0px'</span><span style='color:#406080; '>}</span><span style='color:#308080; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#308080; '>,</span> <span style='color:#1060b6; '>'swing'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+<span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>		</p>
+		<p>Enjoy!</p>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+	margin: 0 auto;
+
+    width: 1000px;
+    height: 500px;
+
+    color: #1060b6;
+    background-color: white;
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+nav {
+	display: block;
+	height: 40px;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Tangerine', arial, serif;
+    color: #1060b6;
+}
+
+h2 {
+    font-size: 90px;
+    font-family: 'Tangerine', arial, serif;
+    color: #1060b6;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: 'Tangerine', arial, serif;
+    color: #1060b6;
+}
+
+nav a {
+	display: block;
+	float: left;
+	
+	width: 250px;
+	height: 40px;
+	
+	padding-top: 5px;
+	
+	vertical-align: middle;
+	
+    font-size: xx-large;
+    font-family: 'Tangerine', arial, serif;
+	
+    color: #1060b6;
+    text-decoration: none;
+	text-align: center;
+}
+
+nav a:hover {
+	background-color: #1060b6;
+    color: white;
+}
+
+#scene {
+	margin-top: 5px;
+    height: 500px;
+    width: 1000px;
+    
+    background-image: url(../img/moon.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+#scene > div {
+    height: 500px;
+    width: 1000px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+#sky {
+    background-image: url(../img/sky.png);
+    z-index: 1;
+}
+
+#forest {
+    margin-top: -500px;
+    background-image: url(../img/forest.png);
+    z-index: 2;
+}
+
+pre {
+	margin-top: 20px;
+	border-left: 2px solid #d9d9d9;
+	padding: 1em 2em;
+	background-color: #595959;
+}
