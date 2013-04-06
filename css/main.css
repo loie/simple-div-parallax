@@ -4,7 +4,7 @@ body {
     width: 1000px;
     height: 500px;
 
-    color: #1060b6;
+    color: #333333;
     background-color: white;
 	font-size: 16px;
 	font-family: Helvetica, Arial, sans-serif;
@@ -12,27 +12,24 @@ body {
 
 nav {
 	display: block;
+    margin: auto 10px auto 0;
 	height: 40px;
 	padding: 0;
-	margin: 10px 0 0 0;
 }
 
 h1 {
-    font-size: 40px;
     font-family: 'Tangerine', arial, serif;
-    color: #1060b6;
+    color: navy;
 }
 
 h2 {
-    font-size: 90px;
     font-family: 'Tangerine', arial, serif;
-    color: #1060b6;
+    color: navy;
 }
 
 h3 {
-    font-size: 50px;
     font-family: 'Tangerine', arial, serif;
-    color: #1060b6;
+    color: navy;
 }
 
 nav a {
@@ -59,32 +56,53 @@ nav a:hover {
     color: white;
 }
 
-#scene {
+.scene {
 	margin-top: 5px;
     height: 500px;
     width: 1000px;
     
-    background-image: url(../img/moon.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
 }
 
-#scene > div {
+.scene > div {
     height: 500px;
     width: 1000px;
     background-position: 0 0;
     background-repeat: no-repeat;
 }
 
-#sky {
-    background-image: url(../img/sky.png);
+.scroll1 {
     z-index: 1;
 }
 
-#forest {
-    margin-top: -500px;
-    background-image: url(../img/forest.png);
+.scroll2 {
     z-index: 2;
+    margin-top: -500px;
+}
+
+.moon {
+    background-image: url(../img/darkfriendlyforest/moon.jpg);
+}
+
+.sky {
+    background-image: url(../img/darkfriendlyforest/sky.png);
+}
+
+.forest {
+    background-image: url(../img/darkfriendlyforest/forest.png);
+}
+
+.table {
+    background-image: url(../img/table/table.jpg);   
+}
+
+.frame {
+    background-image: url(../img/table/frame.png);
+}
+
+.decoration {
+    background-image: url(../img/table/decoration.png);
 }
 
 pre {
