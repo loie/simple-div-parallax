@@ -1,13 +1,13 @@
 body {
-	margin: 0 auto;
+    margin: 0 auto;
 
     width: 1000px;
     height: 500px;
 
     color: #333333;
     background-color: white;
-	font-size: 16px;
-	font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -33,31 +33,31 @@ h3 {
 }
 
 nav a {
-	display: block;
-	float: left;
+    display: block;
+    float: left;
 	
-	width: 250px;
-	height: 40px;
+    width: 250px;
+    height: 40px;
 	
-	padding-top: 5px;
+    padding-top: 5px;
 	
-	vertical-align: middle;
+    vertical-align: middle;
 	
     font-size: xx-large;
     font-family: 'Tangerine', arial, serif;
 	
     color: #1060b6;
     text-decoration: none;
-	text-align: center;
+    text-align: center;
 }
 
 nav a:hover {
-	background-color: #1060b6;
+    background-color: #1060b6;
     color: white;
 }
 
 .scene {
-	margin-top: 5px;
+    margin-top: 5px;
     height: 500px;
     width: 1000px;
     
@@ -106,8 +106,8 @@ nav a:hover {
 }
 
 pre {
-	margin-top: 20px;
-	border-left: 2px solid #d9d9d9;
-	padding: 1em 2em;
-	background-color: #595959;
+    margin-top: 20px;
+    border-left: 2px solid #d9d9d9;
+    padding: 1em 2em;
+    background-color: #595959;
 }
